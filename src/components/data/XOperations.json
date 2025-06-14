@@ -1,0 +1,30 @@
+{
+    "company": {
+        "name": "XOperations",
+        "description": "XOperations empowers Egyptian businesses with intelligent, tailored software, networking, and cybersecurity solutions—driving digital transformation, efficiency, and productivity through cutting-edge integrated technologies.",
+        "contact": {
+            "phone": "+201500000000",
+            "another-phone": "+201000000000",
+            "email": "xoperations.contact@gmail.com",
+            "address": "Alexandria, Egypt"
+        }
+    },
+    "services": {
+        "onsite-service": {
+            "name": "On-Site IT Support",
+            "description": "Our technicians provide on-site support for businesses, ensuring minimal downtime and maximum productivity."
+        },
+        "repair-service": {
+            "name": "Computer Repairs",
+            "description": "We offer fast and reliable repair services for both hardware and software issues. Drop off your device at our office or arrange for courier pickup."
+        },
+        "software-service": {
+            "name": "Software Troubleshooting",
+            "description": "From virus removal to operating system updates, we provide comprehensive software solutions to keep your systems secure and efficient."
+        },
+        "data-service": {
+            "name": "Data Recovery",
+            "description": "Lost important files? Our data recovery experts can help retrieve your data from damaged or corrupted devices."
+        }
+    }
+}
