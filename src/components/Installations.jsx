@@ -16,7 +16,6 @@ const Installations = () => {
 
   return (
     <div className="container-fluid p-5 installations">
-      <h2 className="text-center mb-4 fw-bold">Our Installation Plans</h2>
       <div className="row">
         {plansData.map((plan, index) => (
           <div key={index} className="col-md-4 mb-4">

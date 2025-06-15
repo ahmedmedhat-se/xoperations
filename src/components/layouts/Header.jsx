@@ -82,7 +82,7 @@ function Header() {
                         <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
                             {routes.map((route, index) => (
                                 <li className="nav-item" key={index}>
-                                    <Link className="nav-link text-uppercase" to={route.path}>
+                                    <Link className="nav-link text-uppercase fw-bold text-dark" to={route.path}>
                                         {route.name}
                                     </Link>
                                 </li>

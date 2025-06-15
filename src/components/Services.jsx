@@ -1,4 +1,3 @@
-import React from 'react';
 import services from './Data/Services.json';
 import { Link } from 'react-router-dom';
 
@@ -24,7 +23,6 @@ const Services = () => {
         <div className="container-fluid services-container">
             <section className="container py-5">
                 <div className="row">
-                    <h2 className="text-center mb-5 fw-bold text-dark">Our Services</h2>
                     {services.map((service, index) => (
                         <ServiceCard
                             key={index}
