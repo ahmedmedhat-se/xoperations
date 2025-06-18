@@ -1,4 +1,4 @@
-import Services from "../main/Services.jsx";
+import Services from "../main/HeroSection.jsx";
 import Plans from "../main/Plans.jsx";
 import AboutUs from "../main/AboutUs.jsx";
 import Projects from "../main/Projects.jsx";

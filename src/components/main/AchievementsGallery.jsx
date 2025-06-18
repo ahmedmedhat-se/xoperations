@@ -13,14 +13,6 @@ const AchievementsGallery = () => {
     },
     {
       id: 2,
-      title: "1st Place ISF!",
-      date: "2025",
-      description: "Emovate, an AI-powered study app with adaptive scheduling, gamification, and parental tools, won 1st place in the 2025 ISF Software Category for innovation.",
-      category: "Education",
-      image: "https://media.licdn.com/dms/image/v2/D4D22AQHHpnJYT1wcSw/feedshare-shrink_800/B4DZahvz1bG8Ag-/0/1746470404413?e=2147483647&v=beta&t=yK8dsUVGlZ_OLefd5oEidlaGHyWPw8mwd3GgLOO4AZM"
-    },
-    {
-      id: 3,
       title: "Top 7 Achievers - Mini Shark Tank!",
       date: "2025",
       description: "WattWizards, Egypt’s first all-in-one circuit analysis platform by XOperations, ranked top 7 in Mini Shark Tank Egypt for simplifying engineering with powerful, offline-capable tools.",
@@ -28,7 +20,7 @@ const AchievementsGallery = () => {
       image: "https://powernews.cc/wp-content/uploads/2025/05/IMG-20250515-WA0043-scaled.jpg"
     },
     {
-      id: 4,
+      id: 3,
       title: "IEEE YESIST12 - JE 1st Place!",
       date: "2024-04-20",
       description: "WattWizards—Egypt’s first all-in-one circuit analysis platform—won 1st place at IEEE YESIST12 Egypt, qualifying twice globally in Tunisia and Malaysia for its innovation.",
@@ -36,7 +28,7 @@ const AchievementsGallery = () => {
       image: "https://scontent.fcai19-8.fna.fbcdn.net/v/t39.30808-6/481970727_522038784260671_6311098493098016517_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_ohc=yWT1jTTFMxYQ7kNvwHWbFSz&_nc_oc=AdkYpv9zFE8r6AuG8tr6OMzIYI5Wm_ZF3FDtsX-6oHsrseYKjBqhMsvCfaKN_vJ28yU&_nc_zt=23&_nc_ht=scontent.fcai19-8.fna&_nc_gid=F_OYaQkPNHMo8pmI1FKbog&oh=00_AfPsA3VMNaZsS0L84m0bdByUIpDeDbsCn6RyJY61Eae-7A&oe=68536724"
     },
     {
-      id: 5,
+      id: 4,
       title: "IEEE YESIST12 - NEW Gloabl Qualificaction!",
       date: "2024-04-20",
       description: "AquaFlow has qualified for the global stage of IEEE YESIST12 – Junior Einstein Track, proudly representing its innovation journey in Tunisia.",
@@ -82,7 +74,7 @@ const AchievementsGallery = () => {
               <div className="card-content">
                 <h3>{achievement.title}</h3>
                 <p className="date">{new Date(achievement.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
-                <p className="description">{achievement.description}</p>
+                <p className="description fw-bold">{achievement.description}</p>
               </div>
             </div>
           ))

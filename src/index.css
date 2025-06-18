@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
 :root {
   --primary: #4f46e5;
   --secondary: #10b981;
@@ -27,6 +29,7 @@ html {
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  font-family: 'Nunito', sans-serif;
 }
 
 body {
@@ -161,8 +164,7 @@ img {
 }
 
 /* Page Sections */
-.homepage,
-.services-container {
+.homepage {
   min-height: 100vh;
   padding: 1rem var(--pad);
   width: 100%;
@@ -170,22 +172,6 @@ img {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-}
-
-.services-container {
-  background: linear-gradient(135deg, #ffffff, #7e79bd);
-}
-
-.services .card {
-  transition: var(--transition);
-  width: 100%;
-  margin: 1rem auto;
-  max-width: 100%;
-}
-
-.services .card:hover,
-.card:hover {
-  box-shadow: var(--shadow-lg);
 }
 
 .about-container {
@@ -212,17 +198,10 @@ img {
 }
 
 .about-description p,
-.contact-section p,
-.services-section li {
+.contact-section p {
   color: #333;
   line-height: 1.6;
   max-width: 100%;
-}
-
-.services-section ul {
-  list-style-type: "✨ ";
-  padding-left: 1.2rem;
-  overflow-wrap: break-word;
 }
 
 .map-wrapper {
@@ -315,8 +294,7 @@ footer .copyrights {
 
 
   footer,
-  .about-container,
-  .services-container {
+  .about-container {
     padding: 1.5rem var(--pad);
   }
 
@@ -325,8 +303,7 @@ footer .copyrights {
     height: 2.5rem;
   }
 
-  .homepage,
-  .services-container {
+  .homepage {
     padding: 3rem var(--pad);
   }
 }
@@ -382,8 +359,7 @@ footer .copyrights {
     padding: 0.5rem !important;
   }
 
-  .homepage,
-  .services-container {
+  .homepage {
     min-height: auto;
     padding: 2rem var(--pad);
   }

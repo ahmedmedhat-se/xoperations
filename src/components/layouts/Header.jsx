@@ -17,7 +17,6 @@ function Header() {
     }, []);
 
     const routes = [
-        { path: "/xoperations/services", name: "Services" },
         { path: "/xoperations/plans", name: "Plans" },
         { path: "/xoperations/about", name: "About" },
         { path: "/xoperations/projects-showcase", name: "Projects" },

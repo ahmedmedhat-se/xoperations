@@ -13,7 +13,7 @@ import GoToTop from "./components/layouts/GoToTop.jsx";
 import Footer from "./components/layouts/Footer.jsx";
 
 // Importing Main Components
-import Services from "./components/main/Services.jsx";
+import Services from "./components/main/HeroSection.jsx";
 import Plans from "./components/main/Plans.jsx";
 import AboutUs from "./components/main/AboutUs.jsx";
 import Projects from "./components/main/Projects.jsx";

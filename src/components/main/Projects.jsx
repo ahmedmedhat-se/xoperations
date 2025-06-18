@@ -24,21 +24,13 @@ const projects = [
         description: "A mobile app with dark/light mode and real-time API support.",
         imageUrl: "https://www.sarasolutions.in/assets/images/products/b-bank-3.png",
         projectUrl: "https://www.dostor.org/4685613"
-    },
-    {
-        title: "Emovate",
-        year: "2023 - Present",
-        genres: ["AI", "Education", "Mobile App"],
-        description: "Emovate is an AI-powered productivity app for students, offering smart scheduling, parental oversight, gamified rewards, and engagement tools like Streaks Pet to enhance learning focus.",
-        imageUrl: "https://kalpratech.com/wp-content/uploads/2024/08/AI-in-Education_bg.webp",
-        projectUrl: "https://emovate.netlify.app"
     }
 ];
 
 const Projects = () => {
     return (
         <div className="project-container container-fluid p-5">
-            <h2 className="fw-bold text-center text-light"><span style={{ color: "#186cc7" }}>X</span>Operations Projects!</h2>
+            <h2 className="fw-bold text-center text-light pt-5"><span style={{ color: "#186cc7" }}>X</span>Operations Projects!</h2>
             <div className="row gy-4">
                 {projects.map((project, index) => (
                     <div className="col-md-6" key={index}>
