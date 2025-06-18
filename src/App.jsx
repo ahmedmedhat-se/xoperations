@@ -8,21 +8,23 @@ import {
 import Header from "./components/layouts/Header.jsx";
 import Homepage from "./components/layouts/Homepage.jsx";
 import NotFound from "./components/layouts/NotFound.jsx";
+import FloatingToggler from "./components/layouts/FloatingToggler.jsx";
 import GoToTop from "./components/layouts/GoToTop.jsx";
 import Footer from "./components/layouts/Footer.jsx";
 
-// Importing Components
-import Services from "./components/Services.jsx";
-import Installations from "./components/Installations.jsx";
-import AboutUs from "./components/AboutUs.jsx";
-import Projects from "./components/Projects.jsx";
-import AchievementsGallery from "./components/AchievementsGallery.jsx";
+// Importing Main Components
+import Services from "./components/main/Services.jsx";
+import Plans from "./components/main/Plans.jsx";
+import AboutUs from "./components/main/AboutUs.jsx";
+import Projects from "./components/main/Projects.jsx";
+import AchievementsGallery from "./components/main/AchievementsGallery.jsx";
 
 // Root Layout with shared components
 const RootLayout = () => (
   <>
     <Header />
     <Outlet />
+    <FloatingToggler />
     <GoToTop />
     <Footer />
   </>
@@ -37,7 +39,7 @@ const router = createBrowserRouter([
       { path: "*", element: <NotFound /> },
 
       { path: "services", element: <Services /> },
-      { path: "installations", element: <Installations /> },
+      { path: "plans", element: <Plans /> },
       { path: "about", element: <AboutUs /> },
       { path: "projects-showcase", element: <Projects /> },
       { path: "achievements-gallery", element: <AchievementsGallery /> },

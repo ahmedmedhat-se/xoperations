@@ -1,0 +1,87 @@
+.plans-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10rem 2rem;
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  width: 100%;
+  display: flex;
+}
+
+.plan-card {
+  background: #ffffff0d;
+  border: 1px solid #ffffff22;
+  border-radius: 16px;
+  width: 300px;
+  padding: 2rem;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.plan-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.plan-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffd700;
+}
+
+.plan-description {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #ddd;
+}
+
+.plan-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.plan-features li {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  color: #00e676;
+}
+
+.plan-footer {
+  text-align: center;
+}
+
+.plan-price {
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.choose-btn {
+  background: #ffd700;
+  color: #000;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.choose-btn:hover {
+  background: #ffcf33;
+}

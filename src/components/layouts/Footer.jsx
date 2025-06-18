@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faEnvelope, faPhone, faPrint } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import data from '../data/XOperations.json';
 import { Link, useLocation } from 'react-router-dom';
@@ -35,7 +35,7 @@ function Footer() {
                                 <Link to="/xoperations/services" className='fs-5'>Services</Link>
                             </p>
                             <p>
-                                <Link to="/xoperations/installations" className='fs-5'>Installations</Link>
+                                <Link to="/xoperations/plans" className='fs-5'>Plans</Link>
                             </p>
                             <p>
                                 <Link to="/xoperations/projects-showcase" className='fs-5'>Projects</Link>
@@ -60,7 +60,7 @@ function Footer() {
                         </div>
 
                     </div>
-                    <div className="row">
+                    <div className="row border-top border-primary pt-3 border-1">
                         <section className="d-flex justify-content-center justify-content-lg-between border-bottom">
                             <div className="d-none d-lg-block">
                                 <span className='fw-bold'>Get connected with us on social networks:</span>

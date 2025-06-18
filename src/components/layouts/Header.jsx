@@ -1,29 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
-    const [user, setUser] = useState(null);
     const [scrolled, setScrolled] = useState(false);
     const location = useLocation();
-
-    const updateUser = () => {
-        const storedUser = localStorage.getItem("user");
-        if (storedUser) {
-            try {
-                const parsedUser = JSON.parse(storedUser);
-                setUser(parsedUser);
-            } catch (error) {
-                console.error("Error parsing user data:", error);
-                setUser(null);
-            }
-        } else {
-            setUser(null);
-        }
-    };
-
-    useEffect(() => {
-        updateUser();
-    }, [location]);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -33,22 +16,16 @@ function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-    const handleLogout = () => {
-        localStorage.removeItem("user");
-        setUser(null);
-        window.location.href = '/';
-    };
-
     const routes = [
         { path: "/xoperations/services", name: "Services" },
-        { path: "/xoperations/installations", name: "Installations" },
+        { path: "/xoperations/plans", name: "Plans" },
         { path: "/xoperations/about", name: "About" },
         { path: "/xoperations/projects-showcase", name: "Projects" },
         { path: "/xoperations/achievements-gallery", name: "Achievements" },
     ];
 
     return (
-        <nav className={`navbar navbar-expand-lg p-4 shadow-sm fixed-top header-nav ${scrolled ? "scrolled" : ""}`}>
+        <nav className={`navbar navbar-expand-lg p-3 shadow-sm fixed-top header-nav ${scrolled ? "scrolled" : ""}`}>
             <div className="container">
                 <Link className="navbar-brand" to="/xoperations">
                     <strong><span style={{ color: "#186cc7" }}>X</span>Operations</strong>
@@ -60,7 +37,7 @@ function Header() {
                     data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar"
                     aria-label="Toggle navigation"
-                    style={{ backgroundColor: "#186cc7" }}
+                    style={{ backgroundColor: "#186cc7", color: "#fff" }}
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -88,6 +65,25 @@ function Header() {
                                 </li>
                             ))}
                         </ul>
+
+                        <div className="d-flex justify-content-center align-items-center gap-3">
+                            <a href="https://www.facebook.com/share/1AynM4FeVR/" 
+                            target="_blank" className="text-dark fs-5">
+                                <FontAwesomeIcon icon={faFacebook} />
+                            </a>
+                            <a href="https://www.instagram.com/xoperations.ig?igsh=MXM1cjhyZnhiZ2VlZg==" 
+                            target="_blank" className="text-dark fs-5">
+                                <FontAwesomeIcon icon={faInstagram} />
+                            </a>
+                            <a href="https://youtube.com/@xoperations?si=Cl1zf9w4K1LJtytQ" 
+                            target="_blank" className="text-dark fs-5">
+                                <FontAwesomeIcon icon={faYoutube} />
+                            </a>
+                            <a href="mailto:xoperations.contact@gmail.com" 
+                            target="_blank" className="text-dark fs-5">
+                                <FontAwesomeIcon icon={faEnvelope} />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

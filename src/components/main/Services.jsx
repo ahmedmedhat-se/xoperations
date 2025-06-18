@@ -1,4 +1,4 @@
-import services from './Data/Services.json';
+import services from '../data/Services.json';
 import { Link } from 'react-router-dom';
 
 const ServiceCard = ({ title, description, imageUrl }) => {
@@ -11,7 +11,7 @@ const ServiceCard = ({ title, description, imageUrl }) => {
                     <p className="card-text text-light">{description}</p>
                 </div>
                 <div className="card-footer">
-                    <Link className='card-text text-dark fw-bold btn btn-info' to="/about">Explore</Link>
+                    <Link className='card-text text-dark fw-bold btn btn-info' to="/xoperations/about">Explore</Link>
                 </div>
             </div>
         </div>

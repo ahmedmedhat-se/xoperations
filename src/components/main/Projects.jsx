@@ -1,4 +1,4 @@
-import "./styles/Project.css";
+import "../styles/projects.css";
 
 const projects = [
     {
@@ -32,21 +32,13 @@ const projects = [
         description: "Emovate is an AI-powered productivity app for students, offering smart scheduling, parental oversight, gamified rewards, and engagement tools like Streaks Pet to enhance learning focus.",
         imageUrl: "https://kalpratech.com/wp-content/uploads/2024/08/AI-in-Education_bg.webp",
         projectUrl: "https://emovate.netlify.app"
-    },
-    {
-        title: "Aqua Flow",
-        year: "2023",
-        genres: ["IoT", "Hardware", "Mobile App"],
-        description: "A smart faucet-mounted device that measures water flow and temperature, with mobile app control and real-time monitoring via an electronic control unit.",
-        imageUrl: "https://nsmart.io/wp-content/uploads/2021/02/Water-1.png",
-        projectUrl: "https://drive.google.com/drive/folders/1_gpCDC_-lxU3wDuglqqaZLxJKLK66Xy2?usp=drive_link "
-    },
+    }
 ];
 
 const Projects = () => {
     return (
         <div className="project-container container-fluid p-5">
-            <h2 className="fw-bold text-center"><span style={{ color: "#186cc7" }}>X</span>Operations Projects!</h2>
+            <h2 className="fw-bold text-center text-light"><span style={{ color: "#186cc7" }}>X</span>Operations Projects!</h2>
             <div className="row gy-4">
                 {projects.map((project, index) => (
                     <div className="col-md-6" key={index}>

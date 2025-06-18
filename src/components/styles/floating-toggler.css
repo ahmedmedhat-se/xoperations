@@ -1,0 +1,81 @@
+.floating-toggler-wrapper {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  transform: none;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.toggler-main-btn {
+    background-color: var(--dark);
+    color: #fff;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.6rem;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggler-main-btn:hover {
+    transform: scale(1.1);
+}
+
+.toggler-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.4s ease;
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
+}
+
+.toggler-options.open {
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+
+.toggler-icon {
+    background-color: #222;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1.4rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.toggler-icon:hover {
+    transform: scale(1.15);
+}
+
+.toggler-main-btn {
+    width: 100%;
+    height: 100%;
+}
+
+.toggler-icon.whatsapp {
+    background-color: #25D366;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.toggler-icon.link {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}

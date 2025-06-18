@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Free",
+    "description": "Get access to our YouTube tutorials and beginner courses.",
+    "features": [
+      "Free tutorials on YouTube",
+      "Access to basic coding projects",
+      "Beginner-friendly guides"
+    ],
+    "price": "EGP 0"
+  },
+  {
+    "title": "Standard",
+    "description": "Ideal for individuals or small businesses who need a professional website.",
+    "features": [
+      "Responsive website design",
+      "Up to 5 pages",
+      "Basic SEO and performance setup"
+    ],
+    "price": "EGP 4,000 - 7,000"
+  },
+  {
+    "title": "Premium",
+    "description": "Enterprise-grade solutions like ERP and school management systems.",
+    "features": [
+      "Custom ERP or school system",
+      "Admin & user portals",
+      "Ongoing support and updates"
+    ],
+    "price": "EGP 10,000 - 25,000"
+  }
+]

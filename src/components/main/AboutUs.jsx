@@ -1,4 +1,4 @@
-import data from "./data/XOperations.json";
+import data from "../data/XOperations.json";
 
 const AboutUs = () => {
     const { company, services } = data;

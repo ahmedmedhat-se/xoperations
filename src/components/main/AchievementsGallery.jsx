@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./styles/AchievementsGallery.css";
+import "../styles/achievments-gallery.css";
 
 const AchievementsGallery = () => {
   const [achievements, setAchievements] = useState([
