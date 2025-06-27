@@ -1,20 +1,10 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import { useState } from "react";
 import plansData from "../data/Plans.json";
 import "../styles/plans.css";
+import { Link } from "react-router-dom";
 
 const Plans = () => {
-  const userId = localStorage.getItem('userId');
-  const userCartKey = `cart_${userId}`;
-  const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem(userCartKey)) || []);
-
-  const addToCart = (plan) => {
-    const updatedCart = [...cartItems, plan];
-    setCartItems(updatedCart);
-    localStorage.setItem(userCartKey, JSON.stringify(updatedCart));
-  };
-
   return (
     <div className="plans-container">
       {plansData.map((plan, index) => (
@@ -31,7 +21,7 @@ const Plans = () => {
           </ul>
           <div className="plan-footer">
             <span className="plan-price">{plan.price}</span>
-            <button onClick={() => addToCart(plan)} className="choose-btn">Choose Plan</button>
+            <Link className="choose-btn" to={"/xoperations/about"}>Choose PLan</Link>
           </div>
         </div>
       ))}
