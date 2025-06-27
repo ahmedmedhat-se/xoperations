@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faInstagram, faLinkedin, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 function Header() {
     const [scrolled, setScrolled] = useState(false);
@@ -66,20 +66,24 @@ function Header() {
                         </ul>
 
                         <div className="d-flex justify-content-center align-items-center gap-3">
-                            <a href="https://www.facebook.com/share/1AynM4FeVR/" 
-                            target="_blank" className="text-dark fs-5">
+                            <a href="https://www.facebook.com/share/1AynM4FeVR/"
+                                target="_blank" className="text-dark fs-5">
                                 <FontAwesomeIcon icon={faFacebook} />
                             </a>
-                            <a href="https://www.instagram.com/xoperations.ig?igsh=MXM1cjhyZnhiZ2VlZg==" 
-                            target="_blank" className="text-dark fs-5">
+                            <a href="https://www.instagram.com/xoperations.ig?igsh=MXM1cjhyZnhiZ2VlZg=="
+                                target="_blank" className="text-dark fs-5">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
-                            <a href="https://youtube.com/@xoperations?si=Cl1zf9w4K1LJtytQ" 
-                            target="_blank" className="text-dark fs-5">
+                            <a href="https://youtube.com/@xoperations?si=Cl1zf9w4K1LJtytQ"
+                                target="_blank" className="text-dark fs-5">
                                 <FontAwesomeIcon icon={faYoutube} />
                             </a>
-                            <a href="mailto:xoperations.contact@gmail.com" 
-                            target="_blank" className="text-dark fs-5">
+                            <a href="https://www.linkedin.com/company/xoperations-official/" 
+                                target='_blank' className="text-dark fs-5">
+                                <FontAwesomeIcon icon={faLinkedin} />
+                            </a>
+                            <a href="mailto:xoperations.contact@gmail.com"
+                                target="_blank" className="text-dark fs-5">
                                 <FontAwesomeIcon icon={faEnvelope} />
                             </a>
                         </div>

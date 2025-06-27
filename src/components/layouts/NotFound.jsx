@@ -6,7 +6,7 @@ const NotFound = () => {
     <section
       className="d-flex justify-content-center align-items-center bg-image p-5 mt-5"
       style={{
-        background: 'url(https://images6.alphacoders.com/108/1080125.jpg) no-repeat',
+        background: 'url(https://pixelz.cc/wp-content/uploads/2024/03/404-error-page-shipwreck-uhd-4k-wallpaper.jpg) no-repeat',
         backgroundSize: "cover", backgroundPosition: "center"
       }}
     >
@@ -22,7 +22,7 @@ const NotFound = () => {
                   <p className="lead mb-4" style={{ fontSize: '1.2rem' }}>
                     The page you're looking for doesn't exist or has been moved. Try navigating back to our homepage.
                   </p>
-                  <Link to="/" className="btn btn-primary btn-lg text-light">Go to Homepage</Link>
+                  <Link to="/xoperations/" className="btn btn-primary btn-lg text-light">Go to Homepage</Link>
                 </div>
               </div>
             </div>

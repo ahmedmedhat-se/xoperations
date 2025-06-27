@@ -4,15 +4,15 @@ const projects = [
     {
         title: "Anany AC",
         year: "2025",
-        genres: ["Html5", "Css3", "JavaScript", "Bootstrap 5"],
+        genres: ["Vite", "ReactJS", "JavaScript", "Bootstrap 5"],
         description: "An expert air conditioning repair company website across the UAE.",
-        imageUrl: "https://anany-ac.com/assets/2cursel3.webp",
+        imageUrl: "https://content3.jdmagicbox.com/comp/surat/n9/0261px261.x261.180825175254.q6n9/catalogue/anany-air-conditioners-surat-1ql7b6ngto.jpg",
         projectUrl: "https://anany-ac.com/"
     },
     {
         title: "WattWizards",
         year: "2023 - Present",
-        genres: ["Web App", "Electrical Services"],
+        genres: ["Web App", "Electrical Services", "ERP System"],
         description: "WattWizards—Egypt’s first all-in-one circuit analysis platform—turns complex engineering into click-and-go simplicity.",
         imageUrl: "https://img.freepik.com/premium-photo/male-electrician-hard-hat-works-with-wires-art-electrician-s-day-labor-day-ai-generated_894218-1825.jpg",
         projectUrl: "https://ahmedmedhat-se.github.io/wattwizards-platform/"
@@ -21,10 +21,18 @@ const projects = [
         title: "Blood Bank",
         year: "2023 - 2024",
         genres: ["Mobile App", "Health & Care", "Hospitals", "Blood Donations"],
-        description: "A mobile app with dark/light mode and real-time API support.",
+        description: "A Blood Bank Flutter mobile app connects donors and recipients, enabling fast blood requests, donations, and real-time availability tracking.",
         imageUrl: "https://www.sarasolutions.in/assets/images/products/b-bank-3.png",
         projectUrl: "https://www.dostor.org/4685613"
-    }
+    },
+    {
+        title: "Emovate",
+        year: "2023 - Present",
+        genres: ["Mobile App", "Educational System", "AI", "ML"],
+        description: "Emovate is an AI-powered study app for students, offering smart scheduling, motivation tools, gamified rewards, and parental oversight.",
+        imageUrl: "https://www.taazaa.com/wp-content/uploads/2024/06/ai-app-development.jpg",
+        projectUrl: "https://emovate.netlify.app/"
+    },
 ];
 
 const Projects = () => {

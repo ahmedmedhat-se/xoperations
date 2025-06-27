@@ -1,34 +1,26 @@
 import data from "../data/XOperations.json";
+import XOperationsCover from "../assets/Xoperations Cover.png";
 
 const AboutUs = () => {
-    const { company, services } = data;
+    const { company } = data;
 
     return (
-        <div className="container-fluid about-container p-5">
+        <div className="container-fluid about-container">
             <h2 className='text-center fw-bold fs-3 mb-3'>About <span style={{ color: "#186cc7" }}>X</span>Operations</h2>
             <section className="about-section">
                 <div className="row">
                     <div className="col-md-6">
                         <img
-                            src="https://t4.ftcdn.net/jpg/02/70/00/57/360_F_270005769_k9nENNRBjtDZJV1LOClnlh1NVy3mdQfD.jpg"
+                            src={XOperationsCover}
                             alt="XOperations"
                             className="img-fluid rounded mb-4"
+                            style={{width: "100%"}}
                         />
                     </div>
                     <div className="col-md-6">
                         <h2 className="text-center fw-bold mb-4">{company.name}</h2>
                         <div className="about-description fs-5 mb-4">
                             <p>{company.description}</p>
-                        </div>
-
-                        <div className="services-section mb-4">
-                            <h4 className="mb-3 fw-bold text-center">Our Services:</h4>
-                            <ul>
-                                <li className='fs-5'><strong>{services['software-service'].name}</strong></li>
-                                <li className='fs-5'><strong>{services['repair-service'].name}</strong></li>
-                                <li className='fs-5'><strong>{services['onsite-service'].name}</strong></li>
-                                <li className='fs-5'><strong>{services['data-service'].name}</strong></li>
-                            </ul>
                         </div>
                     </div>
                 </div>

@@ -34,10 +34,9 @@ const router = createBrowserRouter([
   {
     path: "/xoperations/",
     element: <RootLayout />,
+    errorElement: <NotFound />,
     children: [
       { index: true, element: <Homepage /> },
-      { path: "*", element: <NotFound /> },
-
       { path: "services", element: <Services /> },
       { path: "plans", element: <Plans /> },
       { path: "about", element: <AboutUs /> },

@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faFacebookF, faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import data from '../data/XOperations.json';
 import { Link, useLocation } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ function Footer() {
                         <div className="col-md-4 mx-auto mb-4">
                             <Link to="/xoperations">
                                 <img
-                                    src={`${import.meta.env.BASE_URL}main-logo.png`}
+                                    src={`${import.meta.env.BASE_URL}XOperations.png`}
                                     alt="Logo"
                                     className="img-fluid-center mb-3"
                                     style={{ maxWidth: '100px' }}
@@ -57,7 +57,7 @@ function Footer() {
 
                     </div>
                     <div className="row border-top border-primary pt-3 border-1">
-                        <section className="d-flex justify-content-center justify-content-lg-between border-bottom">
+                        <section className="d-flex justify-content-center justify-content-lg-between">
                             <div className="d-none d-lg-block">
                                 <span className='fw-bold fs-5'>Get connected with us on social networks:</span>
                             </div>
@@ -72,7 +72,9 @@ function Footer() {
                                 <a href="https://youtube.com/@xoperations?si=Cl1zf9w4K1LJtytQ" target='_blank' className="me-4 text-reset">
                                     <FontAwesomeIcon icon={faYoutube} />
                                 </a>
-
+                                <a href="https://www.linkedin.com/company/xoperations-official/" target='_blank' className="me-4 text-reset">
+                                    <FontAwesomeIcon icon={faLinkedin} />
+                                </a>
                             </div>
                             <p className='fw-bold fs-5'>© {new Date().getFullYear()} Copyright: xoperations.com</p>
                         </section>
