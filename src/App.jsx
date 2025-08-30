@@ -18,6 +18,7 @@ import Plans from "./components/main/Plans.jsx";
 import AboutUs from "./components/main/AboutUs.jsx";
 import Projects from "./components/main/Projects.jsx";
 import AchievementsGallery from "./components/main/AchievementsGallery.jsx";
+import TeamGallery from "./components/main/TeamGallery.jsx";
 
 // Root Layout with shared components
 const RootLayout = () => (
@@ -42,6 +43,7 @@ const router = createBrowserRouter([
       { path: "about", element: <AboutUs /> },
       { path: "projects-showcase", element: <Projects /> },
       { path: "achievements-gallery", element: <AchievementsGallery /> },
+      { path: "team-gallery", element: <TeamGallery /> },
     ],
   },
 ]);

@@ -1,5 +1,9 @@
 *Xoperations*
 
+<div align="center">
+  <img src="./public/XOperations.png" alt="XOperations Logo" width="300" />
+</div>
+
 *Project Overview*:
 In a rapidly evolving Egyptian market, XOperations is a specialized software company offering intelligent and customized software/networking/cybersecurity solutions. We help businesses with digital transformation, improving efficiency, and boosting productivity through integrated technology services.
 
