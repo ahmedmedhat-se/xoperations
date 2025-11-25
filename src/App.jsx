@@ -80,7 +80,7 @@ const RootLayout = () => {
 
 const createRouteConfig = () => [
   {
-    path: "/xoperations/",
+    path: "/",
     element: <RootLayout />,
     errorElement: <NotFound />,
     children: [
