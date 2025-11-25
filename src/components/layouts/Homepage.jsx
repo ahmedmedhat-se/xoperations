@@ -1,8 +1,8 @@
-import Services from "../main/HeroSection.jsx";
-import Plans from "../main/Plans.jsx";
-import AboutUs from "../main/AboutUs.jsx";
-import Projects from "../main/Projects.jsx";
-import AchievementsGallery from "../main/AchievementsGallery.jsx";
+import Services from "../ui/HeroSection.jsx";
+import Plans from "../ui/Plans.jsx";
+import AboutUs from "../ui/AboutUs.jsx";
+import Projects from "../ui/Projects.jsx";
+import AchievementsGallery from "../ui/AchievementsGallery.jsx";
 
 function Homepage() {
     return (
