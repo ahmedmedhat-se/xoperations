@@ -17,16 +17,16 @@ function Header() {
     }, []);
 
     const routes = [
-        { path: "/xoperations/plans", name: "Plans" },
-        { path: "/xoperations/projects-showcase", name: "Projects" },
-        { path: "/xoperations/achievements-gallery", name: "Achievements" },
-        { path: "/xoperations/team-gallery", name: "Team" },
+        { path: "/plans", name: "Plans" },
+        { path: "/projects-showcase", name: "Projects" },
+        { path: "/achievements-gallery", name: "Achievements" },
+        { path: "/team-gallery", name: "Team" },
     ];
 
     return (
         <nav className={`navbar navbar-expand-lg p-3 shadow-sm fixed-top header-nav ${scrolled ? "scrolled" : ""}`}>
             <div className="container">
-                <Link className="navbar-brand" to="/xoperations">
+                <Link className="navbar-brand" to="/">
                     <strong><span style={{ color: "#186cc7" }}>X</span>Operations</strong>
                 </Link>
                 <button

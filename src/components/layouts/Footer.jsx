@@ -74,10 +74,10 @@ function Footer() {
   ];
 
   const featureLinks = [
-    { to: "/xoperations/plans", icon: faRocket, text: "Plans", delay: 100 },
-    { to: "/xoperations/projects-showcase", icon: faCode, text: "Projects", delay: 200 },
-    { to: "/xoperations/achievements-gallery", icon: faLightbulb, text: "Achievements", delay: 300 },
-    { to: "/xoperations/about", icon: faHome, text: "About Us", delay: 400 },
+    { to: "/plans", icon: faRocket, text: "Plans", delay: 100 },
+    { to: "/projects-showcase", icon: faCode, text: "Projects", delay: 200 },
+    { to: "/achievements-gallery", icon: faLightbulb, text: "Achievements", delay: 300 },
+    { to: "/about", icon: faHome, text: "About Us", delay: 400 },
   ];
 
   return (
@@ -159,17 +159,6 @@ function Footer() {
             <div className="footer-section newsletter-section">
               <h4 className="section-title">Stay Updated</h4>
               <p className="newsletter-text">Get the latest tech insights and project updates</p>
-              <div className="newsletter-form">
-                <input 
-                  type="email" 
-                  placeholder="Enter your email" 
-                  className="newsletter-input"
-                  aria-label="Email for newsletter"
-                />
-                <button className="newsletter-btn" aria-label="Subscribe to newsletter">
-                  Subscribe
-                </button>
-              </div>
             </div>
           </div>
 
