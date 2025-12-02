@@ -10,7 +10,6 @@ function Homepage() {
             <div className="homepage container-fluid">
                 <Services />
                 <Plans />
-                <AboutUs />
                 <Projects />
                 <AchievementsGallery />
             </div>

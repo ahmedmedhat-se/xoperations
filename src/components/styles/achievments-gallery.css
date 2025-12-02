@@ -1,35 +1,44 @@
-/* Achievements Gallery Responsive CSS */
-.achievements-gallery {
-  width: 100%;
-  margin: 0 auto;
-  padding: 2rem;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background: linear-gradient(135deg, #ffffff, #7e79bd);
+/* Legacy Showcase - Premium CSS */
+.legacy-showcase {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
 }
 
-header {
-  margin-bottom: 2rem;
-  text-align: center;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #2d3748;
-  font-weight: 700;
-  background: linear-gradient(90deg, #4f46e5, #10b981);
+.text-gradient {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.controls {
+.bg-gradient-primary {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+}
+
+/* Header Styles */
+.showcase-header {
+  padding: 3rem 0 1rem;
+}
+
+.header-badge .badge {
+  font-size: 0.9rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Filter Buttons */
+.filter-group {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 2rem;
+}
+
+.filter-label {
+  font-weight: 600;
+  color: #495057;
 }
 
 .filter-buttons {
@@ -38,149 +47,347 @@ header h1 {
   flex-wrap: wrap;
 }
 
-.filter-buttons button {
-  padding: 0.5rem 1rem;
-  border: none;
+.filter-btn {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #e9ecef;
   border-radius: 50px;
-  background: #e2e8f0;
-  color: #4a5568;
+  background: white;
+  color: #495057;
   cursor: pointer;
-  transition: all 0.2s ease;
-  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.filter-buttons button:hover {
-  background: #cbd5e0;
+.filter-btn:hover {
+  border-color: #6a11cb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(106, 17, 203, 0.1);
 }
 
-.filter-buttons button.active {
-  background: #4f46e5;
+.filter-btn.active {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.filter-count {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.1rem 0.5rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-left: 0.25rem;
+}
+
+/* View Toggle */
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.view-btn {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  background: white;
+  color: #6c757d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-btn:hover {
+  border-color: #6a11cb;
+  color: #6a11cb;
+}
+
+.view-btn.active {
+  background: #6a11cb;
+  border-color: #6a11cb;
   color: white;
 }
 
-.gallery-grid {
+/* Milestone Cards */
+.milestones-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
 }
 
-.achievement-card {
+.milestones-list .milestone-card {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+}
+
+.milestone-card {
   background: white;
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition: all 0.4s ease;
+  position: relative;
 }
 
-.achievement-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+.milestone-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
-.card-image {
-  height: 200px;
+.milestone-badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.milestone-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+}
+
+.milestone-image {
+  height: 220px;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+
 .category-badge {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 0.25rem 0.75rem;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 0.4rem 1rem;
   border-radius: 50px;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: #4f46e5;
+  color: #6a11cb;
+  backdrop-filter: blur(10px);
 }
 
-.card-content {
-  padding: 1.5rem;
+.milestone-content {
+  padding: 1.75rem;
 }
 
-.card-content h3 {
-  margin: 0 0 0.5rem 0;
-  color: #2d3748;
-  font-size: 1.25rem;
-}
-
-.card-content .date {
-  color: #718096;
-  font-size: 0.9rem;
+.milestone-header {
   margin-bottom: 1rem;
 }
 
-.card-content .description {
-  color: #4a5568;
-  line-height: 1.5;
-  margin: 0;
+.milestone-header h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
 }
 
+.date {
+  color: #6c757d;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  color: #495057;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Evidence Links */
+.milestone-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.evidence-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.evidence-btn {
+  padding: 0.5rem 1rem;
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  color: #495057;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.evidence-btn:hover {
+  background: #6a11cb;
+  color: white;
+  border-color: #6a11cb;
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+.milestone-stats .stat {
+  font-size: 0.85rem;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+}
+
+/* Empty State */
 .empty-state {
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 2rem;
-  color: #718096;
+  padding: 4rem 2rem;
+}
+
+.empty-icon {
+  opacity: 0.5;
+}
+
+/* CTA Section */
+.cta-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  border: 1px solid rgba(106, 17, 203, 0.1);
+}
+
+.cta-buttons .btn {
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  border: none;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(106, 17, 203, 0.2);
 }
 
 /* Responsive Styles */
+@media (max-width: 1200px) {
+  .milestones-grid {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
+}
+
 @media (max-width: 992px) {
-  .controls {
+  .controls-section .row {
     flex-direction: column;
-    align-items: stretch;
+    gap: 1.5rem;
   }
-
-  header h1 {
-    font-size: 2rem;
+  
+  .filter-group {
+    justify-content: center;
+    text-align: center;
   }
-
-  .card-content h3 {
-    font-size: 1.1rem;
+  
+  .view-toggle {
+    justify-content: center;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .cta-buttons .btn {
+    width: 100%;
+    margin: 0;
   }
 }
 
 @media (max-width: 768px) {
-  .gallery-grid {
+  .showcase-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .milestones-grid {
     grid-template-columns: 1fr;
   }
-
-  .controls {
+  
+  .milestone-footer {
     flex-direction: column;
-    gap: 1rem;
+    align-items: stretch;
   }
-}
-
-@media (max-width: 480px) {
-  .achievement-card {
-    border-radius: 10px;
+  
+  .evidence-links {
+    justify-content: center;
   }
-
-  .card-content {
-    padding: 1rem;
-  }
-
-  .card-image {
-    height: 180px;
-  }
-
-  .filter-buttons button {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.75rem;
-  }
-
-  header h1 {
+  
+  .stat-card h3 {
     font-size: 1.75rem;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
+  .legacy-showcase {
+    padding: 1rem;
+  }
+  
   .filter-buttons {
     justify-content: center;
   }
-
-  .filter-buttons button {
-    padding: 0.3rem 0.5rem;
+  
+  .filter-btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .milestone-card {
+    border-radius: 15px;
+  }
+  
+  .milestone-content {
+    padding: 1.25rem;
   }
 }
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.milestone-card {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.milestone-card:nth-child(2) { animation-delay: 0.1s; }
+.milestone-card:nth-child(3) { animation-delay: 0.2s; }
+.milestone-card:nth-child(4) { animation-delay: 0.3s; }
+.milestone-card:nth-child(5) { animation-delay: 0.4s; }

@@ -99,7 +99,7 @@ function Footer() {
         <div className="footer-content">
           <div className="footer-sections">
             <div className="footer-section brand-section">
-              <Link to="/xoperations" className="brand-link" onClick={scrollToTop}>
+              <Link to="/" className="brand-link" onClick={scrollToTop}>
                 <img
                   src={`${import.meta.env.BASE_URL}XOperations.png`}
                   alt="XOperations Logo"
