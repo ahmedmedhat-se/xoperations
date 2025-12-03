@@ -12,9 +12,6 @@ const FloatingToggler = () => {
   return (
     <div className="floating-toggler-wrapper">
       <div className={`toggler-options ${isOpen ? "open" : ""}`}>
-        <a href="https://wa.me/201234567890" target="_blank" rel="noopener noreferrer" className="toggler-icon whatsapp">
-          <FontAwesomeIcon icon={faWhatsapp} />
-        </a>
         <a href="https://linktr.ee/xoperations" target="_blank" rel="noopener noreferrer" className="toggler-icon link">
           <FontAwesomeIcon icon={faLink} />
         </a>

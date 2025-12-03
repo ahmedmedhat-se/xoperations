@@ -109,7 +109,7 @@ const ProjectCard = ({ project, index }) => {
 
     return (
         <div 
-            className={`project-card ${isVisible ? 'visible' : ''}`}
+            className={`project-card ${isVisible ? 'visible' : ''} mb-3`}
             ref={cardRef}
             style={{ animationDelay: `${index * 0.1}s` }}
         >

@@ -36,7 +36,7 @@ function Header() {
                     data-bs-target="#offcanvasNavbar"
                     aria-controls="offcanvasNavbar"
                     aria-label="Toggle navigation"
-                    style={{ backgroundColor: "#186cc7", color: "#fff" }}
+                    style={{ backgroundColor: "#c9d5e2ff", color: "#fff" }}
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>

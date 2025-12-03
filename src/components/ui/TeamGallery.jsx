@@ -4,6 +4,7 @@ import ahmedmedhat from "../assets/xoperations-team/ahmedmedhat.jpg";
 import lucasmonir from "../assets/xoperations-team/lucasmonir.jpeg";
 import muhammedessam from "../assets/xoperations-team/muhammedessam.jpeg";
 import mahmoudabdelkreem from "../assets/xoperations-team/mahmoudabdelkreem.jpeg";
+import faresahmed from "../assets/xoperations-team/faresahmed.jpg";
 
 const TeamGallery = () => {
   const [teamMembers, setTeamMembers] = useState([
@@ -13,7 +14,7 @@ const TeamGallery = () => {
       role: "Full Stack Developer",
       description: "🥉 Bronze Medalist at BASEF 'Software Branch' (ISEF-Sponsored) and two-time global qualifier to IEEE YESIST12 JE Track.",
       image: ahmedmedhat,
-      skills: ["React", "Node.js", "Python", "AWS"]
+      skills: ["ReactJS", "ExpressJS", "MySql", "Laravel"]
     },
     {
       id: 2,
@@ -21,7 +22,7 @@ const TeamGallery = () => {
       role: "Web Publisher",
       description: "🥇 2x Winner at the Afro-Asian Forum for Innovation and Technology.",
       image: muhammedessam,
-      skills: ["WordPress", "SEO", "Content Strategy"]
+      skills: ["WordPress", "SEO", "Content Strategy", "Flutter"]
     },
     {
       id: 3,
@@ -29,7 +30,7 @@ const TeamGallery = () => {
       role: "Full Stack Developer",
       description: "🥇 IEEE YESIST12 JE National Champion and two-time global qualifier, with multiple wins across tech competitions 🇲🇾🇹🇳.",
       image: lucasmonir,
-      skills: ["JavaScript", "TypeScript", "Next.js", "MongoDB"]
+      skills: ["Laravel", "ExpressJS", "ASP.net", "MongoDB"]
     },
     {
       id: 4,
@@ -38,7 +39,15 @@ const TeamGallery = () => {
       description: "🌍 Finalist at Fanny Mobtaker and two-time global qualifier to IEEE YESIST12 Junior Einstein Track",
       image: mahmoudabdelkreem,
       skills: ["Figma", "UI Design", "UX Research", "Prototyping"]
-    }
+    },
+    {
+      id: 5,
+      name: "Fares Ahmed",
+      role: "Full Stack Developer",
+      description: "Enthusiastic full stack developer passionate about building scalable, efficient software solutions.",
+      image: faresahmed,
+      skills: ["Figma", "ExpressJS", "NextJS", "MongoDB"]
+    },
   ]);
 
   const [activeFilter, setActiveFilter] = useState("All");
