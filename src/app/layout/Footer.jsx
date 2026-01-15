@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faPhone, faRocket, faCode, faLightbulb } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faPhone, faRocket, faCode, faLightbulb, faInfo } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import data from '../data/XOperations.json';
 import { Link, useLocation } from 'react-router-dom';
@@ -77,7 +77,8 @@ function Footer() {
     { to: "/plans", icon: faRocket, text: "Plans", delay: 100 },
     { to: "/projects-showcase", icon: faCode, text: "Projects", delay: 200 },
     { to: "/achievements-gallery", icon: faLightbulb, text: "Achievements", delay: 300 },
-    { to: "/about", icon: faHome, text: "About Us", delay: 400 },
+    { to: "/courses", icon: faCode, text: "Courses", delay: 400 },
+    { to: "/about-us", icon: faInfo, text: "About Us", delay: 500 },
   ];
 
   return (
@@ -116,10 +117,9 @@ function Footer() {
                 {data.company.description}
               </p>
               <div className="tech-stack">
-                <span className="tech-tag">React</span>
-                <span className="tech-tag">Node.js</span>
-                <span className="tech-tag">AI/ML</span>
-                <span className="tech-tag">Cloud</span>
+                <span className="tech-tag">Full-Stack</span>
+                <span className="tech-tag">MERN Stack</span>
+                <span className="tech-tag">Cyber Security</span>
               </div>
             </div>
 

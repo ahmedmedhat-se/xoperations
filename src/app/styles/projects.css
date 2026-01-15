@@ -8,7 +8,6 @@
 
 /* Hero Section */
 .hero-section {
-    padding: 5rem 0 3rem;
     background: linear-gradient(135deg, rgba(24, 108, 199, 0.1) 0%, rgba(106, 17, 203, 0.1) 100%);
     position: relative;
     overflow: hidden;

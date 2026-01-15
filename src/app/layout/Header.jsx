@@ -18,13 +18,14 @@ function Header() {
 
     const routes = [
         { path: "/plans", name: "Plans" },
-        { path: "/projects-showcase", name: "Projects" },
         { path: "/achievements-gallery", name: "Achievements" },
+        { path: "/projects-showcase", name: "Projects" },
+        { path: "/courses", name: "Courses" },
         { path: "/team-gallery", name: "Team" },
     ];
 
     return (
-        <nav className={`navbar navbar-expand-lg p-3 shadow-sm fixed-top header-nav ${scrolled ? "scrolled" : ""}`}>
+        <nav className={`navbar navbar-expand-lg p-3 shadow-sm header-nav`}>
             <div className="container">
                 <Link className="navbar-brand" to="/">
                     <strong><span style={{ color: "#186cc7" }}>X</span>Operations</strong>

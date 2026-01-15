@@ -207,7 +207,7 @@ const Projects = () => {
     return (
         <section className="projects-showcase" aria-labelledby="projects-heading">
             <div className="hero-section">
-                <div className="container mt-5">
+                <div className="container mt-2">
                     <div className="hero-content">
                         <h1 id="projects-heading" className="hero-title">
                             XOperations <span className="highlight">Projects</span>

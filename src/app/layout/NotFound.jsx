@@ -22,7 +22,7 @@ const NotFound = () => {
                   <p className="lead mb-4" style={{ fontSize: '1.2rem' }}>
                     The page you're looking for doesn't exist or has been moved. Try navigating back to our homepage.
                   </p>
-                  <Link to="/xoperations/" className="btn btn-primary btn-lg text-light">Go to Homepage</Link>
+                  <Link to="/" className="btn btn-primary btn-lg text-light">Go to Homepage</Link>
                 </div>
               </div>
             </div>

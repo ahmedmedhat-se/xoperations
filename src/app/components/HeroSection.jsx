@@ -55,9 +55,8 @@ const HeroSection = () => {
               through integrated technology services.
             </p>
 
-            {/* CTA Buttons */}
             <div className="hero-actions">
-              <Link to="/xoperations/about" className="btn btn-primary">
+              <Link to="/about-us" className="btn btn-primary">
                 <span>Explore More</span>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -68,7 +67,6 @@ const HeroSection = () => {
               </Link>
             </div>
 
-            {/* Stats */}
             <div className="hero-stats">
               <div className="stat-item">
                 <div className="stat-number">10+</div>
@@ -87,7 +85,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       <div className="scroll-indicator">
         <div className="scroll-arrow"></div>
       </div>

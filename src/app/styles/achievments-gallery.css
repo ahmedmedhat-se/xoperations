@@ -29,6 +29,10 @@
 }
 
 /* Filter Buttons */
+.controls-section {
+  border-radius: 20px;
+}
+
 .filter-group {
   display: flex;
   align-items: center;
@@ -37,7 +41,7 @@
 }
 
 .filter-label {
-  font-weight: 600;
+  font-weight: bold;
   color: #495057;
 }
 

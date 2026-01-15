@@ -8,20 +8,21 @@ import {
 import { Suspense, lazy, useEffect, useMemo } from 'react';
 
 // Importing Layouts
-import Header from "./components/layouts/Header.jsx";
-import Homepage from "./components/layouts/Homepage.jsx";
-import NotFound from "./components/layouts/NotFound.jsx";
-import FloatingToggler from "./components/layouts/FloatingToggler.jsx";
-import GoToTop from "./components/layouts/GoToTop.jsx";
-import Footer from "./components/layouts/Footer.jsx";
+import Header from "./app/layout/Header.jsx";
+import Homepage from "./app/layout/Homepage.jsx";
+import NotFound from "./app/layout/NotFound.jsx";
+import FloatingToggler from "./app/layout/FloatingToggler.jsx";
+import GoToTop from "./app/layout/GoToTop.jsx";
+import Footer from "./app/layout/Footer.jsx";
 
-// Importing UI Components
-const Services = lazy(() => import("./components/ui/HeroSection.jsx"));
-const Plans = lazy(() => import("./components/ui/Plans.jsx"));
-const AboutUs = lazy(() => import("./components/ui/AboutUs.jsx"));
-const Projects = lazy(() => import("./components/ui/Projects.jsx"));
-const AchievementsGallery = lazy(() => import("./components/ui/AchievementsGallery.jsx"));
-const TeamGallery = lazy(() => import("./components/ui/TeamGallery.jsx"));
+// Importing components app
+const Services = lazy(() => import("./app/components/HeroSection.jsx"));
+const Plans = lazy(() => import("./app/components/Plans.jsx"));
+const Projects = lazy(() => import("./app/components/Projects.jsx"));
+const AchievementsGallery = lazy(() => import("./app/components/AchievementsGallery.jsx"));
+const AboutUs = lazy(() => import("./app/components/AboutUs.jsx"));
+const TechCourses = lazy(() => import("./app/components/TechCourses.jsx"));
+const TeamGallery = lazy(() => import("./app/components/TeamGallery.jsx"));
 
 const LoadingSpinner = () => (
   <div className="loading-container">
@@ -109,14 +110,6 @@ const createRouteConfig = () => [
         }
       },
       {
-        path: "about",
-        element: <AboutUs />,
-        handle: {
-          title: "About Us - XOperations",
-          description: "Learn about XOperations and our innovative team"
-        }
-      },
-      {
         path: "projects-showcase",
         element: <Projects />,
         handle: {
@@ -130,6 +123,22 @@ const createRouteConfig = () => [
         handle: {
           title: "Achievements - XOperations",
           description: "Celebrating our milestones and accomplishments"
+        }
+      },
+      {
+        path: "about-us",
+        element: <AboutUs />,
+        handle: {
+          title: "Achievements - XOperations",
+          description: "Celebrating our milestones and accomplishments"
+        }
+      },
+      {
+        path: "courses",
+        element: <TechCourses />,
+        handle: {
+          title: "Tech Courses - XOperations",
+          description: "New Uploaded Courses for Students"
         }
       },
       {

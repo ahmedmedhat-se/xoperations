@@ -4,7 +4,7 @@ import ahmedmedhat from "../assets/xoperations-team/ahmedmedhat.jpg";
 import lucasmonir from "../assets/xoperations-team/lucasmonir.jpeg";
 import muhammedessam from "../assets/xoperations-team/muhammedessam.jpeg";
 import mahmoudabdelkreem from "../assets/xoperations-team/mahmoudabdelkreem.jpeg";
-import faresahmed from "../assets/xoperations-team/faresahmed.jpg";
+import ahmedtarek from "../assets/xoperations-team/ahmedtarek.jpg";
 
 const TeamGallery = () => {
   const [teamMembers, setTeamMembers] = useState([
@@ -14,7 +14,7 @@ const TeamGallery = () => {
       role: "Full Stack Developer",
       description: "🥉 Bronze Medalist at BASEF 'Software Branch' (ISEF-Sponsored) and two-time global qualifier to IEEE YESIST12 JE Track.",
       image: ahmedmedhat,
-      skills: ["ReactJS", "ExpressJS", "MySql", "Laravel"]
+      skills: ["ReactJS", "ExpressJS", "MySql", "Laravel", "TypeScript"]
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const TeamGallery = () => {
       role: "Web Publisher",
       description: "🥇 2x Winner at the Afro-Asian Forum for Innovation and Technology.",
       image: muhammedessam,
-      skills: ["WordPress", "SEO", "Content Strategy", "Flutter"]
+      skills: ["WordPress", "SEO", "Content Strategy", "Flutter", "Android"]
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const TeamGallery = () => {
       role: "Full Stack Developer",
       description: "🥇 IEEE YESIST12 JE National Champion and two-time global qualifier, with multiple wins across tech competitions 🇲🇾🇹🇳.",
       image: lucasmonir,
-      skills: ["Laravel", "ExpressJS", "ASP.net", "MongoDB"]
+      skills: ["Laravel", "ExpressJS", "ASP.net", "MongoDB", "NestJs"]
     },
     {
       id: 4,
@@ -38,15 +38,15 @@ const TeamGallery = () => {
       role: "UI/UX Designer",
       description: "🌍 Finalist at Fanny Mobtaker and two-time global qualifier to IEEE YESIST12 Junior Einstein Track",
       image: mahmoudabdelkreem,
-      skills: ["Figma", "UI Design", "UX Research", "Prototyping"]
+      skills: ["Figma", "UI Design", "UX Research", "Prototyping", "ReactJs"]
     },
     {
       id: 5,
-      name: "Fares Ahmed",
-      role: "Full Stack Developer",
-      description: "Enthusiastic full stack developer passionate about building scalable, efficient software solutions.",
-      image: faresahmed,
-      skills: ["Figma", "ExpressJS", "NextJS", "MongoDB"]
+      name: "Ahmed Tarek",
+      role: "Pentester & Cyber Security",
+      description: "Enthusiastic pentester passionate about securing scalable, efficient software solutions.",
+      image: ahmedtarek,
+      skills: ["Cyber Security", "Pentesting", "Bug Hunting", "Android Development"]
     },
   ]);
 
@@ -61,7 +61,7 @@ const TeamGallery = () => {
   return (
     <div className="team-showcase">
       <div className="team-hero">
-        <div className="container mt-5">
+        <div className="container mt-2">
           <div className="hero-content">
             <h1 className="hero-title">
               Meet the <span className="text-gradient">XOperations</span> Team

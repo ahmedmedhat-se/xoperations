@@ -188,7 +188,7 @@ const AchievementsGallery = () => {
   return (
     <div className="legacy-showcase">
       <div className="container">
-        <header className="showcase-header text-center mb-2 mt-4">
+        <header className="showcase-header text-center mb-2">
           <h1 className="display-4 fw-bold mb-3">
             XOperations <span className="text-gradient">Legacy</span> Showcase
           </h1>
@@ -197,11 +197,11 @@ const AchievementsGallery = () => {
           </p>
         </header>
 
-        <div className="controls-section mb-5">
+        <div className="controls-section bg-dark mb-5">
           <div className="row align-items-center">
             <div className="col-md-8">
               <div className="filter-group">
-                <span className="filter-label me-3">
+                <span className="filter-label me-3 text-light">
                   <i className="fas fa-filter me-2"></i>
                   Filter by:
                 </span>

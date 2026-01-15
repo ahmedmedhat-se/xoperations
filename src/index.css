@@ -111,14 +111,6 @@ img {
   background: linear-gradient(90deg, rgba(234, 233, 255, 1) 0%, rgb(228, 229, 234) 35%, rgba(223, 237, 239, 1) 100%);
 }
 
-.header-nav.scrolled {
-  width: calc(100% - 2rem);
-  margin: 1rem auto;
-  border-radius: 50px;
-  box-shadow: var(--shadow-md);
-  padding: 0.75rem 1rem !important;
-}
-
 .header-nav .navbar-brand strong,
 .offcanvas-title {
   color: var(--dark);
