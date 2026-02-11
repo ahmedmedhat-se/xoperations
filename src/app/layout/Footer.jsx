@@ -2,7 +2,7 @@ import { useEffect, useState, useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faPhone, faRocket, faCode, faLightbulb, faInfo } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faLinkedin, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import data from '../data/XOperations.json';
+import data from '../json/XOperations.json';
 import { Link, useLocation } from 'react-router-dom';
 
 const useScrollAnimation = () => {
@@ -179,11 +179,7 @@ function Footer() {
                   © {currentYear} <strong>XOperations</strong>. All rights reserved.
                 </p>
                 <div className="legal-links">
-                  <Link to="/privacy" className="legal-link">Privacy Policy</Link>
-                  <span className="separator">•</span>
-                  <Link to="/terms" className="legal-link">Terms of Service</Link>
-                  <span className="separator">•</span>
-                  <Link to="/cookies" className="legal-link">Cookies</Link>
+                  <Link to="/privacy-policy" className="legal-link">Privacy Policy</Link>
                 </div>
               </div>
 

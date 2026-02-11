@@ -23,6 +23,7 @@ const AchievementsGallery = lazy(() => import("./app/components/AchievementsGall
 const AboutUs = lazy(() => import("./app/components/AboutUs.jsx"));
 const TechCourses = lazy(() => import("./app/components/TechCourses.jsx"));
 const TeamGallery = lazy(() => import("./app/components/TeamGallery.jsx"));
+const PrivacyPolicy = lazy(() => import("./app/components/PrivacyPolicy.jsx"));
 
 const LoadingSpinner = () => (
   <div className="loading-container">
@@ -149,6 +150,14 @@ const createRouteConfig = () => [
           description: "Meet the talented professionals behind XOperations"
         }
       },
+      {
+        path: "privacy-policy",
+        element: <PrivacyPolicy />,
+        handle: {
+          title: "Privacy Policy - XOperations",
+          description: "Privacy Policy"
+        }
+      }
     ],
   },
 ];

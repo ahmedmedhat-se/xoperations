@@ -62,7 +62,7 @@ const HeroSection = () => {
                   <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
               </Link>
-              <Link to="/xoperations/plans" className="btn btn-secondary">
+              <Link to="/plans" className="btn btn-secondary">
                 View Plans
               </Link>
             </div>

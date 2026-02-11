@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
-import plansData from "../data/Plans.json";
+import plansData from "../json/Plans.json";
 import "../styles/plans.css";
 import { Link } from "react-router-dom";
 
@@ -11,6 +11,7 @@ const Plans = () => {
         <div key={index} className="plan-card">
           <h3 className="plan-title">{plan.title}</h3>
           <p className="plan-description">{plan.description}</p>
+          <p className="badge bg-primary">{plan.targetSegment}</p>
           <ul className="plan-features">
             {plan.features.map((feature, i) => (
               <li key={i}>

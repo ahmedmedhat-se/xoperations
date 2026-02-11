@@ -1,5 +1,5 @@
 import { useState, useMemo, useCallback, useEffect } from 'react';
-import data from "../data/XOperations.json";
+import data from "../json/XOperations.json";
 import XOperationsCover from "../assets/Xoperations Cover.png";
 import "../styles/about-us.css";
 

@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Freemium",
+    "description": "Entry-level access to learning programs and community initiatives.",
+    "targetSegment": "Students / Early Learners",
+    "features": [
+      "Technical workshops and training sessions",
+      "Beginner-friendly coding tutorials",
+      "Research projects and innovation competitions",
+      "Community networking and collaboration events"
+    ],
+    "price": "EGP 500"
+  },
+  {
+    "title": "Standard",
+    "description": "Professional digital solutions for startups and growing businesses.",
+    "targetSegment": "SMEs & Startups",
+    "features": [
+      "Custom responsive website development",
+      "User-focused UI and UX design",
+      "Business workflow automation solutions",
+      "Domain, hosting, and deployment setup"
+    ],
+    "price": "EGP 2,000 - 15,000"
+  },
+  {
+    "title": "Premium",
+    "description": "Advanced enterprise systems for scalable digital transformation.",
+    "targetSegment": "Enterprises & Institutions",
+    "features": [
+      "Mobile and desktop application development",
+      "Advanced enterprise automation systems",
+      "Fully customized ERP solutions",
+      "Ongoing hosting and maintenance support"
+    ],
+    "price": "EGP 15,000 - 80,000"
+  }
+]
