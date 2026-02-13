@@ -29,7 +29,7 @@ Our startup has been showcased in front of:
 In **August 2025**, XOperations participated in a youth innovation event under the umbrella of **TEDx**, representing the next generation of Egyptian tech leaders.
 
 ## 🎯 Mission
-To **empower Egypt’s software industry** through innovative, scalable, and intelligent digital solutions.
+To elevate **Egypt’s software ecosystem** by delivering world-class digital solutions and empowering students and organizations through strategic collaboration, innovation, and technical excellence.
 
 ## 🌍 Vision
 To become **Egypt’s top youth-led tech innovation company**, driving the country’s digital future.
@@ -42,6 +42,37 @@ To become **Egypt’s top youth-led tech innovation company**, driving the count
 - Rapid adoption among Egyptian companies and SMEs  
 
 **XOperations – Your Egyptian Partner for Smart Digital Transformation!**
+
+## 📜 Company History & Milestones
+### 🏁 2025
+- **January 1, 2025**  
+  🚀 XOperations was officially established.
+
+- **March 2025**  
+  💼 Presented our proprietary ERP software portal before distinguished industry leaders:
+  - Eng. Ahmed ElSewedy  
+  - Eng. Abdallah Sallam  
+  - Eng. Dina Ghabour  
+
+- **April 2025**  
+  🏆 Qualified for IEEE YESIST12 for the second consecutive time  
+  *(Previous winners in 2024).*
+
+- **August 2025**  
+  📈 Successfully completed **10+ projects** across multiple industries.  
+  Participated in local business and technology competitions, including:
+  - iSchool Startup Teens  
+
+- **September 2025**  
+  🎤 Sponsored **TEDx Dokki Youth**, strengthening our brand presence among innovators and youth leaders.
+
+- **October 2025**  
+  🌍 Represented the **Egyptian National Team** in Malaysia at the Afro/Asian Forum.  
+  🥇 Achieved **1st Place – Most Aspiring Business Project**.
+
+- **November 2025**  
+  🏛️ Presented XOperations before politicians, ambassadors, and influential business leaders.  
+  The event was highlighted by the presence of **Dr. Amr Talaat**, Minister of Communications and Information Technology (MCIT).
 
 ## Technologies Used
 | Technology | Purpose | Logo |
