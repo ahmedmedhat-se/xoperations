@@ -267,11 +267,6 @@ const ProjectCard = ({ project, index }) => {
                                 </span>
                                 <span className="button-glow"></span>
                             </a>
-                            
-                            <button className="project-share-button" aria-label="Share project">
-                                <i className="fas fa-share-alt"></i>
-                                <span className="share-tooltip">Share</span>
-                            </button>
                         </div>
                     </div>
                 </div>

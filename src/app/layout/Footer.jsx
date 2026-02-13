@@ -148,6 +148,12 @@ function Footer() {
                   </a>
                 </div>
                 <div className="contact-item">
+                  <FontAwesomeIcon icon={faPhone} className="contact-icon" />
+                  <a href={`tel:${data.company.contact['another-phone']}`} className="contact-link">
+                    {data.company.contact.phone}
+                  </a>
+                </div>
+                <div className="contact-item">
                   <FontAwesomeIcon icon={faLightbulb} className="contact-icon" />
                   <a href="mailto:xoperations.contact@gmail.com" className="contact-link">
                     xoperations.contact@gmail.com

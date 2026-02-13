@@ -5,6 +5,8 @@ import lucasmonir from "../assets/xoperations-team/lucasmonir.jpeg";
 import muhammedessam from "../assets/xoperations-team/muhammedessam.jpeg";
 import mahmoudabdelkreem from "../assets/xoperations-team/mahmoudabdelkreem.jpeg";
 import ahmedtarek from "../assets/xoperations-team/ahmedtarek.jpg";
+import ebramsamy from "../assets/xoperations-team/ebramsamy.jpg";
+import stevengerges from "../assets/xoperations-team/stevengerges.jpg";
 
 const TeamGallery = () => {
   const [teamMembers, setTeamMembers] = useState([
@@ -47,6 +49,22 @@ const TeamGallery = () => {
       description: "Enthusiastic pentester passionate about securing scalable, efficient software solutions.",
       image: ahmedtarek,
       skills: ["Cyber Security", "Pentesting", "Bug Hunting", "Android Development"]
+    },
+    {
+      id: 6,
+      name: "Ebram Samy",
+      role: "Frontend Developer",
+      description: "Enthusiastic frontend developer passionate about creating scalable, efficient software solutions.",
+      image: ebramsamy,
+      skills: ["ReactJs", "Tailwind", "JavaScript", "NextJs"]
+    },
+    {
+      id: 7,
+      name: "Seteven Gerges",
+      role: "Flutter Developer",
+      description: "Enthusiastic flutter developer passionate about creating scalable, efficient software solutions.",
+      image: stevengerges,
+      skills: ["ReactJs", "TypeScript", "Flutter", "Android Development"]
     },
   ]);
 
